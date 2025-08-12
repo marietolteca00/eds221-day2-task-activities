@@ -1,0 +1,26 @@
+---
+title: "r_data_types"
+format: html
+---
+What is the class of the vector? class()
+What type of variable does it store? typeof()
+Access the 3rd element and store as vec_1_e3
+Access the 1st element and store as vec_1_e1
+Access the 5th through 7th elements and store as vec_1_e5to7
+Reassign vec_1 as a character using as.character, stored as vec_1_char. What does the output look like?
+```{r}
+vec_1 <- c(2, 5, 9, 10, 8, 12, 1, 0)
+class(vec_1) #numeric
+typeof(vec_1) #double
+
+vec_1_e3 <- vec_1[3]
+vec_1_e3
+
+vec_1_e1 <- vec_1[1]
+
+vec_1_e5to7 <- vec_1[5:7]
+vec_1_e5to7
+
+vec_1_char <- as.character(vec_1)
+vec_1_char #everything is in quotation marks
+```
